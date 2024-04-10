@@ -1,6 +1,14 @@
-const Button = ({ label, iconURL }) => {
+const Button = ({
+  label,
+  iconURL,
+  backgroundColor,
+  textColor,
+  borderColor,
+  fullWidth,
+}) => {
   return (
-    <button className="
+    <button
+      className={`
         flex 
         justify-center 
         items-center 
@@ -10,22 +18,26 @@ const Button = ({ label, iconURL }) => {
         border 
         font-montserrat 
         text-lg 
-        leading-none 
-        bg-coral-red
-        rounded-full
-        text-white
-        border-coral-red
-        "
+        leading-none
+        ${
+          backgroundColor
+            ? `${backgroundColor} ${textColor} ${borderColor}`
+            : "bg-coral-red text-white border-coral-red"
+        } 
+        rounded-full ${fullWidth && "w-full"}
+      `}
     >
-        {label}
+      {label}
 
+      {iconURL && (
         <img
-            src={iconURL}
-            alt="arrow-right"
-            className="ml-2 rounded-full w-5 h-5"
+          src={iconURL}
+          alt="arrow right icon"
+          className="ml-2 rounded-full bg-white w-5 h-5"
         />
+      )}
     </button>
-  )
-}
+  );
+};
 
-export default Button
+export default Button;
