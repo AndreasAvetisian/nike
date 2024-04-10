@@ -32,21 +32,25 @@ export const statistics = [
 export const products = [
     {
         imgURL: shoe4,
+        rating: "4.6",
         name: "Nike Air Jordan-01",
         price: "$200.20",
     },
     {
         imgURL: shoe5,
+        rating: "4.7",
         name: "Nike Air Jordan-10",
         price: "$210.20",
     },
     {
         imgURL: shoe6,
+        rating: "4.5",
         name: "Nike Air Jordan-100",
         price: "$220.20",
     },
     {
         imgURL: shoe7,
+        rating: "4.5",
         name: "Nike Air Jordan-001",
         price: "$230.20",
     },
@@ -73,14 +77,14 @@ export const services = [
 export const reviews = [
     {
         imgURL: customer1,
-        customerName: 'Morich Brown',
+        customerName: 'Lukas Fisher',
         rating: 4.5,
         feedback: "The attention to detail and the quality of the product exceeded my expectations. Highly recommended!"
     },
     {
         imgURL: customer2,
-        customerName: 'Lota Mongeskar',
-        rating: 4.5,
+        customerName: 'Simona Rakobian',
+        rating: 4.7,
         feedback: "The product not only met but exceeded my expectations. I'll definitely be a returning customer!"
     }
 ];
@@ -101,6 +105,7 @@ export const footerLinks = [
     {
         title: "Help",
         links: [
+            { name: "Contact us", link: "#contact-us" },
             { name: "About us", link: "/" },
             { name: "FAQs", link: "/" },
             { name: "How it works", link: "/" },
@@ -112,7 +117,7 @@ export const footerLinks = [
         title: "Get in touch",
         links: [
             { name: "customer@nike.com", link: "mailto:customer@nike.com" },
-            { name: "+92554862354", link: "tel:+92554862354" },
+            { name: "+1234567890", link: "tel:+1234567890" },
         ],
     },
 ];

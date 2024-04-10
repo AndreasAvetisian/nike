@@ -33,7 +33,11 @@ const SpecialOffer = () => {
           Navigate a realm of possibilities designed to fulfill your unique desires, surpassing the loftiest expectations. Your journey with us is nothing short of exceptional.
         </p>
         <div className="mt-11 flex flex-wrap gap-4">
-          <Button label="Shop now" iconURL={arrowRight} />
+          <Button 
+            label="Shop now" 
+            iconURL={arrowRight} 
+            variant="animate-bounce"
+          />
           <Button
             label="Learn more"
             backgroundColor="bg-white"

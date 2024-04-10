@@ -5,6 +5,7 @@ const Button = ({
   textColor,
   borderColor,
   fullWidth,
+  variant
 }) => {
   return (
     <button
@@ -24,7 +25,9 @@ const Button = ({
             ? `${backgroundColor} ${textColor} ${borderColor}`
             : "bg-coral-red text-white border-coral-red"
         } 
-        rounded-full ${fullWidth && "w-full"}
+        rounded-full 
+        ${fullWidth && "w-full"}
+        ${variant}
       `}
     >
       {label}

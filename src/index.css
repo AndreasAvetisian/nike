@@ -24,31 +24,31 @@
 }
 
 @layer utilities {
-  .pad {
+  .padding {
     @apply sm:px-16 px-8 sm:py-24 py-12;
   }
 
-  .pad-x {
+  .padding-x {
     @apply sm:px-16 px-8;
   }
 
-  .pad-y {
+  .padding-y {
     @apply sm:py-24 py-12;
   }
 
-  .pad-l {
+  .padding-l {
     @apply sm:pl-16 pl-8;
   }
 
-  .pad-r {
+  .padding-r {
     @apply sm:pr-16 pr-8;
   }
 
-  .pad-t {
+  .padding-t {
     @apply sm:pt-24 pt-12;
   }
 
-  .pad-b {
+  .padding-b {
     @apply sm:pb-24 pb-12;
   }
 

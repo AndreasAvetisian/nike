@@ -14,28 +14,28 @@ const App = () => {
   return (
     <main className="relative">
       <Nav />
-      <section className="xl:pad-l wide:pad-r pad-b">
+      <section className="xl:padding-l wide:padding-r padding-b">
         <Hero />
       </section>
-      <section className="pad">
+      <section className="padding">
         <PopularProducts />
       </section>
-      <section className="pad">
+      <section className="padding">
         <SuperQuality />
       </section>
-      <section className="pad-x py-10">
+      <section className="padding-x py-10">
         <Services />
       </section>
-      <section className="pad">
+      <section className="padding">
         <SpecialOffer />
       </section>
-      <section className="bg-pale-blue pad">
+      <section className="bg-pale-blue padding">
         <CustomerReviews />
       </section>
-      <section className="pad-x sm:py-32 py-16 w-full">
+      <section className="padding-x sm:py-32 py-16 w-full">
         <Subscribe />
       </section>
-      <section className="bg-black pad-x pad-t pb-8">
+      <section className="bg-black padding-x padding-t pb-8">
         <Footer />
       </section>
     </main>

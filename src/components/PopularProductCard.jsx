@@ -1,11 +1,17 @@
 import { star } from "../assets/icons";
 
-const PopularProductCard = ({ imgURL, name, price }) => {
+const PopularProductCard = ({ imgURL, rating, name, price }) => {
     return (
         <div className="flex flex-1 flex-col w-full max-sm:w-full">
             <img src={imgURL} alt={name} className="w-[282px] h-[282px]" />
             <div className="mt-8 flex justify-start gap-2.5">
-                <img src={star} alt="rating icon" width={24} height={24} />
+                <img 
+                    src={star} 
+                    alt="rating icon" 
+                    width={24} 
+                    height={24}
+                    className="hover:animate-spin"
+                />
                 <p className="
                     font-montserrat 
                     text-xl 
@@ -13,7 +19,7 @@ const PopularProductCard = ({ imgURL, name, price }) => {
                     text-slate-gray
                     "
                 >
-                  (4.5)
+                  {rating}
                 </p>
             </div>
             <h3 className="
